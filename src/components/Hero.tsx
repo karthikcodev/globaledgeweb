@@ -31,9 +31,9 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[480px] sm:min-h-[560px] lg:min-h-[620px] overflow-hidden">
 
-      {/* Background */}
+      {/* ✅ Background ONLY for Desktop */}
       <div
-        className="absolute inset-0 bg-cover"
+        className="hidden md:block absolute inset-0 bg-cover"
         style={{
           backgroundImage: "url('/bg.png')",
           backgroundPosition: "65% center",
@@ -71,21 +71,18 @@ pb-20 sm:pb-28 md:pb-32 lg:pb-40">
           {/* Count-Up Features */}
           <div className="flex flex-wrap gap-2 sm:gap-3 mt-6 sm:mt-8 animate-slide-fade animation-delay-400">
 
-            {/* 100% Success Rate */}
             <div className="flex items-center gap-2 px-3 py-2 sm:px-5 sm:py-2.5 bg-white rounded-lg shadow-sm border border-gray-200 w-full xs:w-auto sm:w-auto">
               <span className="text-[#19377f] text-xs sm:text-sm font-medium">
                 {successRate}% Success Rate
               </span>
             </div>
 
-            {/* Expert Counsellors */}
             <div className="flex items-center gap-2 px-3 py-2 sm:px-5 sm:py-2.5 bg-white rounded-lg shadow-sm border border-gray-200 w-full xs:w-auto sm:w-auto">
               <span className="text-[#19377f] text-xs sm:text-sm font-medium">
                 {expertCounsellors}+ Expert Counsellors
               </span>
             </div>
 
-            {/* Countries */}
             <div className="flex items-center gap-2 px-3 py-2 sm:px-5 sm:py-2.5 bg-white rounded-lg shadow-sm border border-gray-200 w-full xs:w-auto sm:w-auto">
               <span className="text-[#19377f] text-xs sm:text-sm font-medium">
                 {countries}+ Countries
